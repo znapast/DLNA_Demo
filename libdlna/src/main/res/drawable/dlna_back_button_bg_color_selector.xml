@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <gradient android:angle="270" android:endColor="@color/dlna_back_to_phone_play_btn_bg_click_color" android:startColor="@color/dlna_back_to_phone_play_btn_bg_click_color" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+    <!-- focus -->
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/dlna_back_to_phone_play_btn_bg_click_color" android:startColor="@color/dlna_back_to_phone_play_btn_bg_click_color" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+    <!-- hovered -->
+    <item android:state_hovered="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/dlna_back_to_phone_play_btn_bg_click_color" android:startColor="@color/dlna_back_to_phone_play_btn_bg_click_color" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+    <!-- default -->
+    <item><shape>
+            <gradient android:angle="0" android:endColor="@color/dlna_back_to_phone_play_btn_bg_normal_color" android:startColor="@color/dlna_back_to_phone_play_btn_bg_normal_color" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+
+</selector>

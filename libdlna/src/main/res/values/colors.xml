@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DLNA相关 -->
+    <color name="dlna_top_layout_bg_color">#999999</color>
+    <color name="tv_select_target_device_text_color_normal">#ffffff</color>
+    <color name="tv_select_target_device_text_color_click">#3399ff</color>
+    <color name="fl_first_layout_bg_color">#eeeeee</color>
+    <color name="dlna_loading_text_color">#ffffffff</color>
+    <color name="dlna_end_layout_bg_color">#ff999999</color>
+    <color name="dlna_end_text_color">#ffffffff</color>
+    <color name="dlna_back_to_phone_play_btn_bg_normal_color">#ffffffff</color>
+    <color name="dlna_back_to_phone_play_btn_bg_click_color">#d1d1d1</color>
+    <color name="dlna_back_to_phone_play_text_color">#252525</color>
+    <color name="dlna_divider_line_color">#3399ff</color>
+    <color name="dlna_device_text_color">#ffffffff</color>
+    <color name="dlna_dialog_bg_color">#1a1e25</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/tv_dlna_device_item"
+    	android:layout_width="match_parent"
+    	android:layout_height="48dp"
+	    android:minHeight="?android:attr/listPreferredItemHeight"
+	    android:textColor="@color/dlna_item_text_color_selector"
+	    android:gravity="center_vertical"
+	    android:background="@android:color/transparent"
+	    android:paddingLeft="12dip"
+	    android:paddingRight="7dip"
+	    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+	    android:ellipsize="end"
+		android:maxLines="1"
+	    android:singleLine="true"
+	    android:textSize="14sp" />
+    
+</RelativeLayout>

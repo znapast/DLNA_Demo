@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sniff_pop_layout"
+    android:layout_width="250dp"
+    android:layout_height="147dp"
+    android:background="@drawable/dlna_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_dlna_search_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical" >
+
+            <!-- 刷新按钮 -->
+
+            <ImageView
+                android:id="@+id/dlna_dialog_refresh_btn"
+                android:layout_width="32dp"
+                android:layout_height="fill_parent"
+                android:layout_alignBottom="@+id/dlna_dialog_close_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/dlna_btn_refresh_selector" />
+
+            <!-- 选择输出设备 -->
+
+            <TextView
+                android:id="@+id/tv_select_target_device_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/dlna_dialog_close_btn"
+                android:layout_toRightOf="@+id/dlna_dialog_refresh_btn"
+                android:gravity="center"
+                android:text="@string/tv_select_target_device_text"
+                android:textColor="@color/tv_select_target_device_text_color_normal"
+                android:textSize="14sp" />
+
+            <!-- 关闭按钮 -->
+
+            <ImageView
+                android:id="@+id/dlna_dialog_close_btn"
+                android:layout_width="32dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/dlna_btn_close_selector" />
+
+            <TextView
+                android:id="@+id/dlna_divider_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dlna_divider_line_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="102dp"
+        android:background="@android:color/transparent"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_target_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="#efffffff"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_no_target_device_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tv_no_target_device_text"
+            android:textColor="@color/tv_select_target_device_text_color_normal"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_searching_target_device"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center" >
+
+            <!-- 搜索等待菊花 -->
+
+            <ProgressBar
+                android:id="@+id/pb_dlna_search_view_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_searching_target_device_text"
+                android:indeterminate="false"
+                android:indeterminateBehavior="cycle"
+                android:indeterminateDrawable="@drawable/unified_loading_circle_drawable"
+                android:indeterminateDuration="1"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tv_searching_target_device_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/tv_searching_target_device_text"
+                android:textColor="@color/tv_select_target_device_text_color_normal"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

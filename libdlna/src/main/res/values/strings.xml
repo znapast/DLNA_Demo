@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LibDLNA</string>
+
+    <!-- DLNA相关 -->
+    <string name="tv_searching_target_device_text">正在搜寻设备...</string>
+    <string name="tv_select_target_device_text">选择输出设备</string>
+    <string name="tv_no_target_device_text">没有发现可用的DLNA设备</string>
+    <string name="tv_show_dlna">DLNA</string>
+    <string name="tv_show_dlna_connecting_state">正在连接中</string>
+    <string name="tv_show_dlna_connected_success_state">已连接</string>
+    <string name="tv_show_dlna_connected_fail_state">无法连接</string>
+    <string name="tv_show_dlna_device_name_default">连接的设备</string>
+    <string name="tv_show_dlna_resource_name_default">播放的资源</string>
+    <string name="tv_show_back_to_phone_play">返回手机播放</string>
+    <string name="tv_show_dlna_disconnected">DLNA连接已断开</string>
+</resources>
